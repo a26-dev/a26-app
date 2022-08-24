@@ -1,0 +1,19 @@
+$primary: #f07000;
+$link: $primary;
+$text: #ffffff;
+$background: #202020;
+
+@import 'bulma';
+
+html {
+  overflow-y: auto;
+}
+
+body {
+  background-color: #202020;
+  &>div#__next {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
