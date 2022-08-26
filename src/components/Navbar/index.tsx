@@ -41,10 +41,10 @@ const Navbar: FunctionComponent = (props) => {
         <div className={`navbar-menu ${isBurgerActive ? 'is-active' : ''}`}>
           <div className="navbar-end">
             <Link href="/">
-              <a className="navbar-item">{t('common:home')}</a>
+              <a className="navbar-item has-text-black">{t('common:home')}</a>
             </Link>
             <Link href="/about">
-              <a className="navbar-item">{t('common:about')}</a>
+              <a className="navbar-item has-text-black">{t('common:about')}</a>
             </Link>
           </div>
         </div>
