@@ -14,5 +14,8 @@
   },
   "footer": {
     "made-with-love": "feito com amor"
+  },
+  "ora": {
+    "description": "Soma intervalos de horas para saber o tempo gasto em uma atividade"
   }
 }

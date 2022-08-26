@@ -14,5 +14,8 @@
   },
   "footer": {
     "made-with-love": "made with love"
+  },
+  "ora": {
+    "description": "Sum hour intervals to track the time spent on an activity"
   }
 }
