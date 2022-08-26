@@ -5,17 +5,13 @@ import styles from './styles.module.scss'
 const Footer: FunctionComponent = (props) => {
   const t = useTranslation()
   const devDomain = t('common:dev-domain')
+
   return (
-    <footer
-      className="section"
-      style={{ backgroundColor: '#202020', flexGrow: 1 }}
-      {...props}
-    >
+    <footer className={[styles.footer, 'section'].join(' ')} {...props}>
       <div className="container">
-        <p className="is-size-7 has-text-centered" style={{ color: '#d0d0d0' }}>
+        <p className="is-size-7 has-text-centered">
           {t('footer:made-with-love')} &middot; 2022 &middot;{' '}
           <a
-            className={styles.devLink}
             href={`https://${devDomain}`}
             target="_blank"
             rel="noopener noreferrer"
