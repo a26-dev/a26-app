@@ -1,8 +1,10 @@
 import type { FunctionComponent } from 'react'
 import useTranslation from '../../locales'
+import styles from './styles.module.scss'
 
 const Footer: FunctionComponent = (props) => {
   const t = useTranslation()
+  const devDomain = t('common:dev-domain')
   return (
     <footer
       className="section"
@@ -10,28 +12,15 @@ const Footer: FunctionComponent = (props) => {
       {...props}
     >
       <div className="container">
-        <p>{t('footer:built-with')}</p>
-        <p>
+        <p className="is-size-7 has-text-centered" style={{ color: '#d0d0d0' }}>
+          {t('footer:made-with-love')} &middot; 2022 &middot;{' '}
           <a
-            href="https://nextjs.org"
+            className={styles.devLink}
+            href={`https://${devDomain}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            NextJS.org
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://vercel.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vercel.com
-          </a>
-        </p>
-        <p>
-          <a href="https://bulma.com" target="_blank" rel="noopener noreferrer">
-            Bulma.io
+            {devDomain}
           </a>
         </p>
       </div>

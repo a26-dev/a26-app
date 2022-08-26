@@ -3,7 +3,7 @@
     "about": "Sobre",
     "home": "Início",
     "site-domain": "a26.app",
-    "dev-domain": "a26.devapp"
+    "dev-domain": "a26.dev"
   },
   "home": {
   },
@@ -13,6 +13,6 @@
     "p-3rd": "Ainda estamos organizando a casa. Em breve disponibilizaremos informações de contato para recebermos suas sugestões e conversarmos com calma. 😉"
   },
   "footer": {
-    "built-with": "Construído com"
+    "made-with-love": "feito com amor"
   }
 }
