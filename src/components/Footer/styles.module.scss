@@ -1,5 +1,14 @@
 .footer {
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #c0c0c0;
+
+  &.section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   a {
     color: inherit;

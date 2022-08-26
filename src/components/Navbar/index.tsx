@@ -8,6 +8,11 @@ const Navbar: FunctionComponent = (props) => {
   const [isBurgerActive, setIsBurgerActive] = useState(false)
   const t = useTranslation()
 
+  const menuItemClassName = `navbar-item ${
+    isBurgerActive ? 'has-text-black' : ''
+  }`
+  const onMenuItemClick = () => setIsBurgerActive(false)
+
   return (
     <nav className="navbar is-black has-shadow" {...props}>
       <div className="container">
@@ -41,10 +46,14 @@ const Navbar: FunctionComponent = (props) => {
         <div className={`navbar-menu ${isBurgerActive ? 'is-active' : ''}`}>
           <div className="navbar-end">
             <Link href="/">
-              <a className="navbar-item has-text-black">{t('common:home')}</a>
+              <a className={menuItemClassName} onClick={onMenuItemClick}>
+                {t('common:home')}
+              </a>
             </Link>
             <Link href="/about">
-              <a className="navbar-item has-text-black">{t('common:about')}</a>
+              <a className={menuItemClassName} onClick={onMenuItemClick}>
+                {t('common:about')}
+              </a>
             </Link>
           </div>
         </div>

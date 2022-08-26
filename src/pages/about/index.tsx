@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Breadcrumb from '../../components/Breadcrumb'
 import useTranslation from '../../locales'
 
 const AboutPage: NextPage = () => {
@@ -12,6 +13,8 @@ const AboutPage: NextPage = () => {
           {t('common:site-domain')} | {t('common:about')}
         </title>
       </Head>
+
+      <Breadcrumb />
 
       <main className="section">
         <div className="container">

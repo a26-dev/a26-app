@@ -21,9 +21,13 @@ body {
   bottom: 0;
   left: 0;
   position: fixed;
-  overflow-y: auto;
   background-color: $background;
   color: $text;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {

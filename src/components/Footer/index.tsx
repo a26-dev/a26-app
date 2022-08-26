@@ -7,17 +7,21 @@ const Footer: FunctionComponent = (props) => {
   const devDomain = t('common:dev-domain')
 
   return (
-    <footer className={[styles.footer, 'section'].join(' ')} {...props}>
+    <footer
+      className={`${styles.footer} ${styles.section} section has-background-black`}
+      {...props}
+    >
       <div className="container">
         <p className="is-size-7 has-text-centered">
-          {t('footer:made-with-love')} &middot; 2022 &middot;{' '}
+          {t('footer:made-with-love')} &middot;{' '}
           <a
             href={`https://${devDomain}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             {devDomain}
-          </a>
+          </a>{' '}
+          &middot; 2022
         </p>
       </div>
     </footer>
